@@ -1,4 +1,4 @@
-package com.rahul.FirstSpring;
+package com.app.FirstSpringEcom;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

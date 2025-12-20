@@ -1,13 +1,13 @@
-package com.rahul.FirstSpring;
+package com.app.FirstSpringEcom;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FirstSpringApplication {
+public class FirstSpringEcomApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FirstSpringApplication.class, args);
+		SpringApplication.run(FirstSpringEcomApplication.class, args);
 	}
 
 }
