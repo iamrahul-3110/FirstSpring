@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here & initialize it using property tag(look for message and set message to that)-->
+    <bean id="carSpecification" class="car.setter.injection.Specification">
+        <property name="make" value="Kia"/>
+        <property name="model" value="Seltos"/>
+    </bean>
+
+    <!-- Injecting bean via setter -->
+    <bean id="myCar" class="car.setter.injection.Car" >
+        <property name="specification" ref="carSpecification"/>
+    </bean>
+
+</beans>
