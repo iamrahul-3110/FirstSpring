@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-
+ // jackson library responsible for conversion in json...
     @GetMapping("/hello")
-    public String hello() {
-        return "hello folks!";
+    public HelloResponse hello() {
+//        return "hello folks!";
+        return new HelloResponse("Hello folks this is my first project...");
     }
 
     @PostMapping("/hello")
-    public String helloPort(@RequestBody String name) {
-        return "hello " + name + "!";
+    public HelloResponse helloPort(@RequestBody String name) {
+        return new HelloResponse("hello folks this is my first project... " + name +", here I am");
     }
 }
